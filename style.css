@@ -1,6 +1,7 @@
-html, body, section, h1, div {
+html, body, section, h1, div, textarea, button {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -21,6 +22,7 @@ body {
 }
 section {
     width: 85vw;
+    max-width: 600px;
     min-height: 70vh;
     padding: 10px;
     margin-bottom: 10vh;
@@ -43,17 +45,33 @@ section textarea {
     padding: 5px;
 }
 section button {
+    background-color: var(--cor-azul);
+    color: white;
+    font-family: var(--font-ubuntu);
+    font-weight: 700;
+    padding: 2px;
     margin-bottom: 15px;
+    border: 2px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+}
+section button:hover {
+    background: rgb(213,58,157);
+    background: linear-gradient(90deg, rgba(213,58,157,1) 30%, rgba(116,58,213,1) 70%);
 }
 #lettersDiv {
     width: 85%;
     padding: 5px;
     border-radius: 2px;
-    background-color: #d53a9d;
+    background: rgb(0,0,46);
+    background: linear-gradient(90deg, rgba(0,0,46,1) 0%, rgba(213,58,157,1) 30%);
     margin-bottom: 8px;
 }
 #wordsDiv{
     width: 85%;
-    background-color: #743ad5;
     padding: 5px;
+    border-radius: 2px;
+    background: rgb(116,58,213);
+    background: linear-gradient(90deg, rgba(116,58,213,1) 80%, rgba(0,0,46,1) 100%);
+    margin-bottom: 10px;
 }

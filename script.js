@@ -23,11 +23,11 @@ button.addEventListener("click", function() {
     }
     for (let letter in letterCounts) { 
         const span = document.createElement("span"); 
-        const textContent = `"${letter}": ${letterCounts[letter]}, `;
+        const textContent = `"${letter}":${letterCounts[letter]}, `;
         span.innerText = textContent; 
         letters.appendChild(span); 
     }
-    //-------------------------------------------------
+
     const wordCounts = {}
     let arrTypedText = typedText.split(' ')
     for (let i = 0; i < arrTypedText.length; i++) {
@@ -41,9 +41,8 @@ button.addEventListener("click", function() {
     }
     for (let word in wordCounts) {
         const span = document.createElement('span')
-        const textContent = `${word}: ${wordCounts[word]}, `
+        const textContent = `${word}:${wordCounts[word]}, `
         span.innerText = textContent
         words.appendChild(span)
     }
 });
-//words = typedText.split(/\s/);
